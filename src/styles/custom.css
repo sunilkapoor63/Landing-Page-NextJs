@@ -1,0 +1,100 @@
+/* Ensure the container takes full width on smaller screens */
+.container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Adjust form inputs and buttons for small screens */
+  form input,
+  form button {
+    width: 100%;
+  }
+  
+  /* Adjust images to ensure they are centered and responsive */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Adjust text alignment for smaller screens */
+  .text-center-sm {
+    text-align: center;
+  }
+  
+  .flex-center-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adjust hero section for better responsiveness */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-section .hero-text,
+  .hero-section .hero-image {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      align-items: center;
+    }
+    .hero-section .hero-text,
+    .hero-section .hero-image {
+      width: 50%;
+    }
+  }
+  
+  /* Adjust development stages for better responsiveness */
+  .development-stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .development-stages {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .development-stages .stage {
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .development-stages .stage {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Ensure full width of form inputs and buttons */
+  form input,
+  form button {
+    width: 100%;
+  }
+  
+  /* Align footer items correctly */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  
